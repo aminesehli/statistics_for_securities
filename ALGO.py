@@ -360,7 +360,7 @@ def plot_basic_signals(df, stock1, stock2, zscore, ratio):
     x1,x2,y1,y2 = plt.axis()
     plt.axis((x1,x2,ratio.min(),ratio.max()))
     plt.legend(["Ratio", "Buy Signal", "Sell Signal"])
-    plt.title(f"Buy and Sell Signals for {stock1} and {stock2}")
+    plt.title(f"Buy and Sell Signals for {stock1} to {stock2}")
 
 stocks = ['NVDA', 'AVGO', 'TSM', 'QCOM', 'INTC', 'AMD', 'ASML', 'ARM', 'TXN', 'AMAT', 'MU', 'ADI', 'SNPS', 'CDNS', 'MRVL', 'NXPI', 'MPWR', 'MCHP', 'KLAC']
 dataHist = fetch_stock_data(stocks)
